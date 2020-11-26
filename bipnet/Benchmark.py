@@ -83,11 +83,11 @@ def main(argv):
 	try:
 	  opts, args = getopt.getopt(argv,"hi:o:n",["ifile=","ofile=","noise="])
 	except getopt.GetoptError:
-		print 'Benchmark.py -i <inputfile> -o <outputfile> --noise <noise>' 
+		print('Benchmark.py -i <inputfile> -o <outputfile> --noise <noise>')
 		sys.exit(2)
 	for opt, arg in opts:
 		if opt == '-h':
-			print 'Benchmark.py -i <inputfile> -o <outputfile> --noise <noise>'
+			print('Benchmark.py -i <inputfile> -o <outputfile> --noise <noise>')
 			sys.exit()
 		elif opt in ("-i", "--ifile"):
 			inputfile = arg
