@@ -83,11 +83,11 @@ def main(argv):
 	try:
 		opts, args = getopt.getopt(argv,"hi:o:s:t",["ifile=","ofile=","side=","thr="])
 	except getopt.GetoptError:
-		print 'Validate.py -i <inputfile> -o <outputfile> --side <bool> --thr <float>' 
+		print('Validate.py -i <inputfile> -o <outputfile> --side <bool> --thr <float>')
 		sys.exit(2)
 	for opt, arg in opts:
 		if opt == '-h':
-			print 'Validate.py -i <inputfile> -o <outputfile> --side <bool> --thr <float>'
+			print('Validate.py -i <inputfile> -o <outputfile> --side <bool> --thr <float>')
 			sys.exit()
 		elif opt in ("-i", "--ifile"):
 			inputfile = arg
