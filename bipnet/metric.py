@@ -47,5 +47,6 @@ if __name__=='__main__':
 	x = pd.read_csv(x,sep='\t',header=None)
 	A = awi(x[0],x[1])
 	
-	print("AWI: ",A[0])
-	print("pvalue: ",A[1])
+	#print("AWI: ",A[0])]
+	print('hello')
+	#print("pvalue: ",A[1])
